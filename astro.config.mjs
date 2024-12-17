@@ -10,17 +10,20 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Guias',
 					items: [
 						{ label: 'Introducción', slug: 'guides/introduction' },
 						{ label: 'Configuración del Proyecto', slug: 'guides/configuration' },
-						{ label: 'Secciones del Portafolio', slug: 'guides/sections' },
 						{ label: 'Pruebas y Mantenimiento', slug: 'guides/testing' },
 						{ label: 'Conclusión', slug: 'guides/conclusion' },
 					],
 				},
 				{
-					label: 'Reference',
+					label: 'Estructura',
+					autogenerate: { directory: 'structure' },
+				},
+				{
+					label: 'Referencias',
 					autogenerate: { directory: 'reference' },
 				},
 			],
