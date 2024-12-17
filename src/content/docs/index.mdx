@@ -1,0 +1,40 @@
+---
+title: Documentación del Porfolio Personal
+description: Desarrollado con React, Astro y Tailwind CSS.
+template: splash
+hero:
+  tagline: Bienvenido a la documentación de mi portafolio personal.
+  image:
+    file: ../../assets/logo.png
+  actions:
+    - text: Introducción
+      link: /guides/introduction/
+      icon: right-arrow
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Documentación del Portafolio
+
+Este portafolio ha sido desarrollado utilizando **React**, **Astro** y ** CSS**. A través de esta documentación, podrás conocer los detalles sobre la estructura del proyecto, las tecnologías utilizadas, y cómo mantener y actualizar el contenido.
+
+<CardGrid stagger>
+	<Card title="Introducción" icon="pencil">
+		Conoce el propósito y las tecnologías utilizadas en el desarrollo del portafolio personal. Este proyecto combina velocidad, diseño moderno y flexibilidad para mostrar tu información profesional de forma atractiva.
+	</Card>
+	<Card title="Configuración del Proyecto" icon="setting">
+		Aprende a configurar el proyecto en tu entorno local, incluyendo la instalación de dependencias y la ejecución del servidor de desarrollo.
+	</Card>
+	<Card title="Estructura del Proyecto" icon="seti:happenings">
+		Explora la organización y los componentes clave del código fuente, incluyendo las carpetas `src`, `components`, `pages` y más. Conoce cómo está estructurado el contenido y los datos estáticos para mantener un sitio eficiente y fácil de actualizar.
+	</Card>
+	<Card title="Secciones del Portafolio" icon="open-book">
+		Detalles sobre cada una de las secciones del portafolio: **Acerca de mí**, **Educación**, **Experiencia laboral**, **Proyectos**, **Habilidades** y **Formulario de Contacto**. Cada sección está implementada de manera modular para facilitar su personalización.
+	</Card>
+	<Card title="Pruebas y Mantenimiento" icon="rocket">
+		Guía para realizar pruebas en el proyecto, herramientas recomendadas como Thunder Client o Postman, y cómo mantener actualizado el contenido, incluyendo los datos estáticos en `data.json`.
+	</Card>
+	<Card title="Conclusión" icon="information">
+		Una reflexión sobre el proyecto, los aprendizajes obtenidos y los próximos pasos para mejorar y expandir el portafolio.
+	</Card>
+</CardGrid>
